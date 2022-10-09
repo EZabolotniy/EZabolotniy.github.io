@@ -17,8 +17,8 @@ struct EzabolotniyGithubIo: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "https://your-website-url.com")!
-    var name = "EzabolotniyGithubIo"
-    var description = "A description of EzabolotniyGithubIo"
+    var name = "iOS Camera"
+    var description = "This blog researchers iOS Camera capabilities"
     var language: Language { .english }
     var imagePath: Path? { nil }
 }

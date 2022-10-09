@@ -29,7 +29,6 @@ private struct BlogHTMLFactory<Site: Website>: HTMLFactory {
                     H1(index.title)
                     Paragraph(context.site.description)
                         .class("description")
-                    H2("Latest content")
                     ItemList(
                         items: context.allItems(
                             sortedBy: \.date,
