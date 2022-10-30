@@ -3,7 +3,7 @@ date: 2022-10-10 16:31
 description: In this post we try to create QR and barcodes scanner.
 tags: AVFoundation, Vision
 ---
-# QR scanner
+# Metadata scanner
 
 Naive approche – use AVFoundation only
 
