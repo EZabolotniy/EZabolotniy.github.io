@@ -9,7 +9,7 @@ struct EzabolotniyGithubIo: Website {
     // Add the sections that you want your website to contain here:
 //    case camera
     case structures
-    case interview
+//    case interview
     case about
   }
 
