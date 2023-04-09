@@ -49,8 +49,8 @@
     }
 
     <span class="keyword">let</span> noCommentString = <span class="keyword">self</span>[..&lt;commentStartIndex]
-    <span class="keyword">if let</span> firstLetterIndex = noCommentString.<span class="call">firstIndex</span>(where: { $0.<span class="property">isLetter</span> }),
-       <span class="keyword">let</span> lastLetterIndex = noCommentString.<span class="call">lastIndex</span>(where: { $0.<span class="property">isLetter</span> || $0.<span class="property">isNumber</span> }) {
+    <span class="keyword">if let</span> firstLetterIndex = noCommentString.<span class="call">firstIndex</span>(where: { $!$0.<span class="property">isWhitespace</span> }),
+       <span class="keyword">let</span> lastLetterIndex = noCommentString.<span class="call">lastIndex</span>(where: { !$0.<span class="property">isWhitespace</span> }) {
       <span class="keyword">return</span> <span class="type">String</span>(<span class="keyword">self</span>[firstLetterIndex...lastLetterIndex])
     }
     <span class="keyword">return</span> <span class="string">""</span>
